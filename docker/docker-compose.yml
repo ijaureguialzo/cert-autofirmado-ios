@@ -19,8 +19,8 @@ services:
     image: nginx:mainline
     volumes:
       - ./www:/usr/share/nginx/html
-    expose:
-      - 80
+    ports:
+      - "80:80"
 
 volumes:
   https-portal_certs:

@@ -17,11 +17,11 @@ _urls: _header
 	${info }
 	@echo Sitios disponibles:
 	@echo ----------------------------
-	@echo [Prueba] https://prueba.test
+	@echo [Prueba] http://prueba.test
 	@echo ----------------------------
 
 _start-command:
-	@docker compose up -d --remove-orphans
+	@docker compose up -d --remove-orphans nginx
 
 start: _start-command _urls
 

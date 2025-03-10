@@ -12,9 +12,9 @@ struct ContentView: View {
         Button {
             Task {
                 let (data, _) = try await
-                URLSession.shared.data(from: URL(string: "https://prueba.test")!)
+                URLSession.shared.data(from: URL(string: "http://prueba.test")!)
 
-                print(data)
+                print(String(data: data, encoding: .utf8)!)
             }
         } label: {
             Text("Pide datos")
