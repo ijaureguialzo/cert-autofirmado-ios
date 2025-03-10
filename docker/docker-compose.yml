@@ -1,0 +1,27 @@
+services:
+  https-portal:
+    image: steveltn/https-portal:latest
+    stop_signal: SIGINT
+    environment:
+      # noinspection HttpUrlsUsage
+      DOMAINS: >
+        prueba.test -> http://nginx:80,
+      STAGE: local
+    volumes:
+      - https-portal_certs:/var/lib/https-portal
+      - https-portal_logs:/var/log/nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - nginx
+  nginx:
+    image: nginx:mainline
+    volumes:
+      - ./www:/usr/share/nginx/html
+    expose:
+      - 80
+
+volumes:
+  https-portal_certs:
+  https-portal_logs:
