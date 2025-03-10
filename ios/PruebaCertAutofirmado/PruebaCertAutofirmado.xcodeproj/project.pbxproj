@@ -10,9 +10,22 @@
 		413E6F122D7FAC2400AE0313 /* PruebaCertAutofirmado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaCertAutofirmado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		413E6F242D7FADB400AE0313 /* Exceptions for "PruebaCertAutofirmado" folder in "PruebaCertAutofirmado" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 413E6F112D7FAC2400AE0313 /* PruebaCertAutofirmado */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		413E6F142D7FAC2400AE0313 /* PruebaCertAutofirmado */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				413E6F242D7FADB400AE0313 /* Exceptions for "PruebaCertAutofirmado" folder in "PruebaCertAutofirmado" target */,
+			);
 			path = PruebaCertAutofirmado;
 			sourceTree = "<group>";
 		};
@@ -255,6 +268,7 @@
 				DEVELOPMENT_TEAM = RSEH385M54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PruebaCertAutofirmado/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +298,7 @@
 				DEVELOPMENT_TEAM = RSEH385M54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PruebaCertAutofirmado/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
