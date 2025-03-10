@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button {
+            Task {
+                let (data, _) = try await
+                URLSession.shared.data(from: URL(string: "https://prueba.test")!)
+
+                print(data)
+            }
+        } label: {
+            Text("Pide datos")
         }
-        .padding()
     }
 }
 
